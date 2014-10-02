@@ -1,0 +1,35 @@
+body
+{
+    text-align:center;
+}
+
+.greeting
+{
+    color:white;
+}
+
+
+img
+{
+    width:100%;
+}
+
+.morning
+{
+    background-color:#865F86;
+}
+
+.afternoon
+{
+    background-color:#2C87C8;
+}
+
+.evening
+{
+    background-color:#C7B02F;
+}
+
+.night
+{
+    background-color:#180629;
+}

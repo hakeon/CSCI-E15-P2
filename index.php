@@ -20,9 +20,10 @@ ini_set('display_errors', 1);
 
 </head>
 
-<body>
-    <h1> "Hello, World!" </h1>
-    <h1> <?php echo $time; ?> </h1>
+<body class='<?=$class?>'>
+
+    <p class='greeting'> <?php echo $greeting; ?> </p>
+    <img src='http://thewc.co.s3.amazonaws.com/challenges/<?=$image?>' alt="Image of the time of day" >
 
 </body>
 
