@@ -1,8 +1,9 @@
 <div class="container">
 	
-	<h1>xkcd Password Generator</h1>
-	<p>a better, more secure, password selected randomly just for you</p>
 	<h2 class='greeting'> <?php echo $greeting; ?> </h2>
+	<h1>xkcd Password Generator</h1>
+	<h3>a better, more secure, password selected randomly just for you</h3>
+	<p>Your password is:</p>
 	
 	<div class='options'>
 		<form method="POST" action="index.php">

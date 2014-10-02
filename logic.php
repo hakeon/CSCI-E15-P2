@@ -72,25 +72,28 @@ else
 if ($words = file('words.txt'))
 {
     $selected_words = [];
+    $symbols = ['@','#','$','!','&','*'];
+    $numbers = [0,1,2,3,4,5,6,7,8,9];
 
     for($i = 0; $i < $count; $i++)
     {
         $max = count($words) -1;
         $rand = rand(0, $max);
             $word = $words[$rand];
-            echo $word ,'<br />';
-
             array_push($selected_words, $word);
     }
 
     if ($uppercase)
     {
-        //set uppercase
+        foreach ($selected_words as $index => $word) {
+            $selected_words[$index] = ucfirst($word);
+            echo $selected_words[$index] ,'<br />';
+        }
     }
 
     if ($symbol)
     {
-        //set symbol
+        //set symbol 
     }
 
     if ($number)
