@@ -1,35 +1,35 @@
 body
 {
-    text-align:center;
+    text-align: center;
+    color: white;
 }
 
-.greeting
+.container
 {
-    color:white;
+	margin: 15%
 }
 
-
-img
+.options
 {
-    width:100%;
+    text-align: left;
 }
 
 .morning
 {
-    background-color:#865F86;
+    background-color: #865F86;
 }
 
 .afternoon
 {
-    background-color:#2C87C8;
+    background-color: #2C87C8;
 }
 
 .evening
 {
-    background-color:#C7B02F;
+    background-color: #C7B02F;
 }
 
 .night
 {
-    background-color:#180629;
+    background-color: #180629;
 }

@@ -1,5 +1,7 @@
 <?php
 
+// Styling Logic from here to Dynamic Logic
+
 date_default_timezone_set('America/New_York');
 
 $time = date('g:ia');
@@ -29,4 +31,70 @@ else
     $greeting = "good evening";
 }
 
-?>
+// Dynamic Logic from this line down
+
+if (isset($_POST['count']))
+{
+    $count = $_POST['count'];
+}
+else
+{
+    $count = 1;
+}
+
+if (isset($_POST['uppercase']))
+{
+    $uppercase = true;
+}
+else
+{
+    $uppercase = false;
+}
+
+if (isset($_POST['symbol']))
+{
+    $symbol = true;
+}
+else
+{
+    $symbol = false;
+}
+
+if (isset($_POST['number']))
+{
+    $number = true;
+}
+else
+{
+    $number = false;
+}
+
+if ($words = file('words.txt'))
+{
+    $selected_words = [];
+
+    for($i = 0; $i < $count; $i++)
+    {
+        $max = count($words) -1;
+        $rand = rand(0, $max);
+            $word = $words[$rand];
+            echo $word ,'<br />';
+
+            array_push($selected_words, $word);
+    }
+
+    if ($uppercase)
+    {
+        //set uppercase
+    }
+
+    if ($symbol)
+    {
+        //set symbol
+    }
+
+    if ($number)
+    {
+        //set number
+    }
+}
