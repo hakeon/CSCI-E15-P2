@@ -1,11 +1,3 @@
-<?php
-error_reporting(-1); # Report all PHP errors
-ini_set('display_errors', 1);
-?>
-
-<!DOCTYPE html>
-<html>
-
 <head>
 
     <title>CSCI E-15 P2</title>
@@ -19,11 +11,3 @@ ini_set('display_errors', 1);
     <?php require 'logic.php'; ?>
 
 </head>
-
-<body class='<?=$class?>'>
-
-    <p class='greeting'> <?php echo $greeting; ?> </p>
-
-</body>
-
-</html>
