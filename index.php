@@ -7,6 +7,14 @@ ini_set("display_errors", 1);
 <html>
 
 <head>
+
+    <title>CSCI E-15 P2</title>
+    <meta charset='utf-8'>
+
+    <link rel='stylesheet' href='style.css' type='text.css>
+
+    <?php require 'logic.php'; ?>
+
 </head>
 
 <body>
