@@ -6,12 +6,19 @@ body
 
 .container
 {
-	margin: 15%
+	margin: 5%
+}
+
+#password
+{
+	color: red;
 }
 
 .options
 {
     text-align: left;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 .morning
