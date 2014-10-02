@@ -19,7 +19,7 @@ ini_set("display_errors", 1);
 
 <body>
 
-    <h1> <?=$time?> </h1>
+    <h1> <?php echo $time; ?> </h1>
 
 </body>
 
