@@ -5,8 +5,9 @@
 	<div>
 		<h4>this is a</h4>
 		<h1>xkcd Password Generator</h1>
-		<h3>a better, more secure, password selected randomly just for you</h3>
-		<p id='password'>Your password is:</p>
+		<h3>a mo' better password creator</h3>
+		<p id='password'>Your password is: </p>
+		<p id='password'> <?= $password ?> </p>
 	</div>
 	
 	<div class='options'>

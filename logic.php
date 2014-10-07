@@ -19,7 +19,7 @@ else if($hour >= 12 AND $hour < 17)
     $greeting = "good afternoon";
 }
 
-else if($hour >= 17 AND $hour < 21)
+else if($hour >= 17 AND $hour < 20)
 {
     $class = 'evening';
     $greeting = "good evening";
@@ -75,6 +75,7 @@ if ($words = file('words.txt'))
     $symbols = ['@','#','$','!','&','*'];
     $numbers = [0,1,2,3,4,5,6,7,8,9];
 
+
     for($i = 0; $i < $count; $i++)
     {
         $max = count($words) -1;
@@ -85,19 +86,35 @@ if ($words = file('words.txt'))
 
     if ($uppercase)
     {
-        foreach ($selected_words as $index => $word) {
+        foreach ($selected_words as $index => $word)
+        {
             $selected_words[$index] = ucfirst($word);
-            echo $selected_words[$index] ,'<br />';
         }
     }
 
     if ($symbol)
     {
-        //set symbol 
+        foreach ($selected_words as $index => $word)
+        {
+            $symbol_count = count($symbols) -1;
+            $rand = rand(0, $symbol_count);
+
+            $selected_words[$index] = $symbols[$rand].$word;
+        }
     }
 
     if ($number)
     {
-        //set number
+        foreach ($selected_words as $index => $word)
+        {
+            $rand_num = rand(0, 9);
+
+            $selected_words[$index] = $rand_num.$word;
+        }
     }
+    foreach ($selected_words as $index => $word)
+    {
+        $password = join($selected_words);
+    }
+
 }
