@@ -5,7 +5,7 @@
 	<div>
 		<h4>this is a</h4>
 		<h1>xkcd Password Generator</h1>
-		<h3>a mo' better password creator</h3>
+		<h3>a mo' better password creator*</h3>
 		<p id='password'>Your password is: </p>
 		<p id='password'> <?= $password ?> </p>
 	</div>
@@ -40,4 +40,5 @@
 		<input type="submit" name="submit" value="submit"/>
 		</form>
 	</div>
+	<p>*for an explanation of why an xkcd password is mo' better, click here: <a href="http://xkcd.com/936/" target="_blank" >xkcd</a> </p>
 </div>
