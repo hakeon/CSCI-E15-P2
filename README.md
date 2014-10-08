@@ -1,6 +1,7 @@
 Title:  xkcd Password Generator
 URL: http://p2.hakeon.me/
 GitHub: https://github.com/hakeon/CSCI-E15-P2
+Jing Demo URL: http://screencast.com/t/g0fdr7gn0
 Scope:  This site generates an xkcd password via the
 parameters choosen by the user; number of words, use
 of upper-case, sybols, and numbers.  To generate the
